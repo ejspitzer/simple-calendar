@@ -3,7 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <title>MyCalendar</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h2>MyCalendar</h2>
+      <div class="title-bar">
+        <button id="arrow-left">
+          <i class="fas fa-caret-left"></i>
+        </button>
+        <h1 id="month-title">Mesec Leto</h1>
+        <button id="arrow-right">
+          <i class="fas fa-caret-right"></i>
+        </button>
+      </div>
+      <!-- <button><i class="fas fa-bars"></i></button> -->
+    </header>
+
+    <div class="calendar">
+      <div class="week">
+        <div class="day-title">Ponedeljek</div>
+        <div class="day-title">Torek</div>
+        <div class="day-title">Sreda</div>
+        <div class="day-title">Četrtek</div>
+        <div class="day-title">Petek</div>
+        <div class="day-title">Sobota</div>
+        <div class="day-title">Nedelja</div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day today"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
