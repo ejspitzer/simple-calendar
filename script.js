@@ -1,12 +1,16 @@
+const imgArray = ["img/jan-wp.jpg", "img/feb-wp.jpg", "img/mar-wp.jpg","img/apr-wp.jpg",
+"img/maj-wp.jpg", "img/jun-wp.jpg", "img/jul-wp.jpg","img/avg-wp.jpg",
+"img/sep-wp.jpg", "img/okt-wp.jpg", "img/nov-wp.jpg", "img/dec-wp.jpg",];
 const prevBtn = document.querySelector("#arrow-left");
 const nextBtn = document.querySelector("#arrow-right");
 const monthTitle = document.querySelector("#month-title");
-const d = new Date();
-monthTitle.innerHTML = `${getMonthName()} ${d.getFullYear()}`;
-
 const allWeeks = document.querySelectorAll(".week");
+const d = new Date();
+
 let daysInMonth = numOfDays(d.getFullYear(), d.getMonth());
+monthTitle.innerHTML = `${getMonthName()} ${d.getFullYear()}`;
 buildCalendar();
+setBackground(d.getMonth());
 
 prevBtn.addEventListener("click", changePrev);
 nextBtn.addEventListener("click", changeNext);
@@ -16,6 +20,7 @@ function changePrev() {
     monthTitle.innerHTML = `${getMonthName()} ${d.getFullYear()}`;
     daysInMonth = numOfDays(d.getFullYear(), d.getMonth());
     buildCalendar();
+    setBackground(d.getMonth());
 }
 
 function changeNext() {
@@ -23,6 +28,7 @@ function changeNext() {
     monthTitle.innerHTML = `${getMonthName()} ${d.getFullYear()}`;
     daysInMonth = numOfDays(d.getFullYear(), d.getMonth());
     buildCalendar();
+    setBackground(d.getMonth());
 }
 
 function getMonthName() {
@@ -77,7 +83,6 @@ function numOfDays(year, month) {
 function buildCalendar(){
     const firstDay = new Date(d.getFullYear(), d.getMonth(), 0);
     const day = firstDay.getDay();
-    console.log(daysInMonth);
 
     // RESET CALANDER:
     for(i = 1; i < allWeeks.length; i++) {
@@ -125,5 +130,58 @@ function buildCalendar(){
                 }
             }    
         }
+    }
+}
+
+function setBackground(month){
+    switch (month){
+        case 0:
+            console.log(imgArray[0]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[0]})`;
+            break;
+        case 1:
+            console.log(imgArray[1]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[1]})`;
+            break;
+        case 2:
+            console.log(imgArray[2]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[2]})`;
+            break;
+        case 3:
+            console.log(imgArray[3]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[3]})`;
+            break;
+        case 4:
+            console.log(imgArray[4]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[4]})`;
+            break;
+        case 5:
+            console.log(imgArray[5]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[5]})`;
+            break;
+        case 6:
+            console.log(imgArray[6]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[6]})`;
+            break;
+        case 7:
+            console.log(imgArray[7]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[7]})`;
+            break;
+        case 8:
+            console.log(imgArray[8]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[8]})`;
+            break;
+        case 9:
+            console.log(imgArray[9]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[9]})`;
+            break;
+        case 10:
+            console.log(imgArray[10]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[10]})`;
+            break;
+        case 11:
+            console.log(imgArray[11]);
+            document.querySelector("body").style.backgroundImage = `url(${imgArray[11]})`;
+            break;
     }
 }

@@ -22,7 +22,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  // background-image: url("https://source.unsplash.com/1600x900/?nature,water");
   background-image: url("img/jan-wp.jpg");
   background-position: center;
   background-size: cover;
@@ -41,6 +40,11 @@ header {
   h2 {
     position: absolute;
     left: 15vw;
+
+    a {
+      color: $light-gray;
+      text-decoration: none;
+    }
   }
 
   button {
