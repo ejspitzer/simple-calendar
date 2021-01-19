@@ -89,8 +89,8 @@ header button:hover {
 }
 
 .calendar {
-  width: 1000px;
-  height: 400px;
+  width: 80vw;
+  height: 70vh;
   margin-bottom: 10vh;
   opacity: 0.8;
   display: -ms-grid;
