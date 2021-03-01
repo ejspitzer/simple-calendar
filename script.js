@@ -94,18 +94,74 @@ function buildCalendar() {
     // FIRST DAY IN A MONTH:
     if(day === 0){
         allWeeks[1].children[0].innerHTML = "1";
+
+        if(new Date().getDate() === 1 && d.getMonth() === new Date().getMonth()){
+            console.log("dela-1");
+            allWeeks[1].children[0].classList.add("today");
+        } else {
+            console.log("nedela-1");
+            allWeeks[1].children[0].classList.remove("today");
+        }
     } else if(day === 1){
         allWeeks[1].children[1].innerHTML = "1";
+        
+        if(new Date().getDate() === 2 && d.getMonth() === new Date().getMonth()){
+            console.log("dela-1");
+            allWeeks[1].children[1].classList.add("today");
+        } else {
+            console.log("nedela-1");
+            allWeeks[1].children[1].classList.remove("today");
+        }
     } else if(day === 2){
         allWeeks[1].children[2].innerHTML = "1";
+
+        if(new Date().getDate() === 3 && d.getMonth() === new Date().getMonth()){
+            console.log("dela-1");
+            allWeeks[1].children[2].classList.add("today");
+        } else {
+            console.log("nedela-1");
+            allWeeks[1].children[2].classList.remove("today");
+        }
     } else if(day === 3){
         allWeeks[1].children[3].innerHTML = "1";
+
+        if(new Date().getDate() === 4 && d.getMonth() === new Date().getMonth()){
+            console.log("dela-1");
+            allWeeks[1].children[3].classList.add("today");
+        } else {
+            console.log("nedela-1");
+            allWeeks[1].children[3].classList.remove("today");
+        }
     } else if(day === 4){
         allWeeks[1].children[4].innerHTML = "1";
+
+        if(new Date().getDate() === 5 && d.getMonth() === new Date().getMonth()){
+            console.log("dela-1");
+            allWeeks[1].children[4].classList.add("today");
+        } else {
+            console.log("nedela-1");
+            allWeeks[1].children[4].classList.remove("today");
+        }
     } else if(day === 5){
         allWeeks[1].children[5].innerHTML = "1";
+
+        if(new Date().getDate() === 6 && d.getMonth() === new Date().getMonth()){
+            console.log("dela-1");
+            allWeeks[1].children[5].classList.add("today");
+        } else {
+            console.log("nedela-1");
+            allWeeks[1].children[5].classList.remove("today");
+        }
     } else if(day === 6){
         allWeeks[1].children[6].innerHTML = "1";
+
+        if(new Date().getDate() === 7 && d.getMonth() === new Date().getMonth()){
+            console.log("dela-1");
+            allWeeks[1].children[6].classList.add("today");
+        } else {
+            console.log("nedela-1");
+            allWeeks[1].children[6].classList.remove("today");
+        }
     }
 
 
